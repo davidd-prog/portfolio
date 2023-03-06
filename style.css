@@ -82,6 +82,11 @@ footer {
   border-radius: 1em 1em 0 0;
   margin: 1.7%;
   padding: 0.2em 0.3em 0.2em 0.2em;
+  transform: transform 0.3s;
+  transition: all 0.3s ease;
+}
+.projectItem:hover {
+  transform: scale(1.1);
 }
 .photoBox {
   display: flex;
