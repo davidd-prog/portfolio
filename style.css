@@ -29,7 +29,36 @@ footer {
 .home {
   text-decoration: underline;
 }
-
+.nameAndPhoto {
+  display: flex;
+  justify-content: space-between;
+}
+.name {
+  font-size: 2em;
+  margin-top: 0.5em;
+}
+.idPhoto {
+  object-fit: cover;
+  height: 120px;
+  width: 90px
+}
+.navMenu {
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+.siteLinks {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+.siteLink {
+  margin-right: 1.5em;
+  height: 100%;
+}
+.navLink {
+  text-decoration: underline;
+}
 /************************************************* */
 /******** La page Home *************************** */
 
