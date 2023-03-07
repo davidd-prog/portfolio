@@ -115,6 +115,26 @@ footer {
   text-align: center;
   margin: 0.5em 0.5em;
 }
+.informations {
+  display: flex;
+}
+.joinInfos {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.mailPicture {
+  margin-top: 25px;
+  height: 80px;
+  width: 70px;
+}
+.gitLogo {
+  height: 80px;
+  width: 70px;
+}
+.contact {
+  margin-right: 2em;
+}
 
 /************************************************* */
 /******** La page Compétences ******************** */
