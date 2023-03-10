@@ -141,7 +141,14 @@ footer {
 
 /************************************************* */
 /******** La page CV ***************************** */
-
+.cv {
+  display: flex;
+  justify-content: center;
+  margin: 1em 1em;
+}
+.cvImage {
+  width: 700px;
+}
 /******** La page Contact ************************ */
 
 /************************************************* */
@@ -165,10 +172,29 @@ footer {
   .projectItem {
     width: 90%;
   }
+  .cv {
+    margin: 0;
+  }
+  .cvImage {
+    width: 550px;
+  }
+}
+@media screen and (max-width: 421px) {
+  .cvImage {
+    width: 420px;
+  }
+}
+@media screen and (max-width: 393px) {
+  .cvImage {
+    width: 393px;
+  }
 }
 @media screen and (max-width: 365px) {
   .projects {
     width: 100%;
     margin: auto;
+  }
+  .cvImage {
+    width: 365px;
   }
 }
