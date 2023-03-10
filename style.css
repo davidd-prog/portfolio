@@ -150,7 +150,30 @@ footer {
   width: 700px;
 }
 /******** La page Contact ************************ */
-
+.contactMargin {
+  margin-right: 1em;
+}
+.contactSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contactGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.linkedinPicture {
+  height: 50px;
+  width: 70px;
+}
+.mailContact {
+  margin: 0.5em;
+}
+.linkedinContact {
+  margin: 0.5em;
+}
 /************************************************* */
 /******** Le Responsive ************************** */
 @media screen and (max-width: 1150px) {
