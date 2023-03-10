@@ -138,7 +138,70 @@ footer {
 }
 /************************************************* */
 /******** La page Compétences ******************** */
+.margeCompetence {
+  width: 90%;
+  margin: auto;
+}
 
+.technos {
+  background-color: #f2f2f2;
+  padding: 0.5em 1em 1.5em 0em;
+}
+.items {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+}
+.technoItem {
+  box-shadow: 2px 2px 6px lightgray;
+  background-color: white;
+  width: 150px;
+  height: 150px;
+  border-radius: 1em;
+  margin: 1em;
+  padding: 0.5em;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation-name: apparition;
+  animation-duration: 0.8s;
+  animation-delay: var(--delay);
+  animation-fill-mode: forwards;
+}
+.javascriptItem {
+  box-shadow: 2px 2px 6px lightgray;
+  background-color: white;
+  width: 150px;
+  height: 150px;
+  border-radius: 1em;
+  margin: 0.4em;
+  padding: 0.5em;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation-name: apparition;
+  animation-duration: 0.8s;
+  animation-delay: var(--delay);
+  animation-fill-mode: forwards;
+}
+.technoPhoto {
+  width: 80px;
+  height: auto;
+}
+.javascriptPhoto {
+  width: 80px;
+  height: auto;
+  margin-top: 0.9em;
+}
+.technoTitle {
+  margin-top: 0.5em;
+}
+.javascriptTitle {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
 /************************************************* */
 /******** La page CV ***************************** */
 .cv {
@@ -174,16 +237,66 @@ footer {
 .linkedinContact {
   margin: 0.5em;
 }
+/********************************** */
+/********* L'Animation ************** */
+@keyframes apparition {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/****************************************************************************/
+/********* Ordre d'apparition des éléments de la page compétences ***********/
+.technoItem:nth-child(1) {
+  --delay: 0s;
+}
+.technoItem:nth-child(2) {
+  --delay: 0.2s;
+}
+.javascriptItem:nth-child(3) {
+  --delay: 0.4s;
+}
+.technoItem:nth-child(4) {
+  --delay: 0.6s;
+}
 /************************************************* */
 /******** Le Responsive ************************** */
 @media screen and (max-width: 1150px) {
   .projectItem {
     width: 40%;
   }
+  .technoItem {
+    margin: 1%;
+  }
 }
 @media screen and (max-width: 827px) {
   .marge {
     margin: auto;
+  }
+  .margeCompetence {
+    width: 95%;
+    margin: auto;
+  }
+  .items {
+    justify-content: space-evenly;
+  }
+}
+@media screen and (max-width: 769px) {
+  .technoItem {
+    width: 100px;
+  }
+  .javascriptItem {
+    width: 100px;
+  }
+  .technoTitle {
+    font-size: 1.2em;
+  }
+  .javascriptTitle {
+    font-size: 1.2em;
   }
 }
 @media screen and (max-width: 750px) {
@@ -191,9 +304,23 @@ footer {
     width: 60%;
   }
 }
+@media screen and (max-width: 573px) {
+  .technoItem {
+    width: 100px;
+  }
+  .javascriptItem {
+    width: 100px;
+  }
+}
 @media screen and (max-width: 550px) {
   .projectItem {
     width: 90%;
+  }
+  .technoTitle {
+    font-size: 1.2em;
+  }
+  .javascriptTitle {
+    font-size: 1.2em;
   }
   .cv {
     margin: 0;
@@ -203,6 +330,12 @@ footer {
   }
 }
 @media screen and (max-width: 421px) {
+  .technoItem {
+    width: 170px;
+  }
+  .javascriptItem {
+    width: 170px;
+  }
   .cvImage {
     width: 420px;
   }
@@ -217,7 +350,38 @@ footer {
     width: 100%;
     margin: auto;
   }
+  .technos {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 365px) {
+  .projects {
+    width: 100%;
+    margin: auto;
+  }
   .cvImage {
     width: 365px;
+  }
+}
+/******************************************************************************************** */
+/******** Réglage sur le Responsive tablettes pour les compétences ************************** */
+@media screen and (max-width: 912px) and (min-width: 768px) {
+  .competencesHeader {
+    margin: 2em;
+  }
+  .technos {
+    width: 100%;
+  }
+  .technosTitle {
+    margin: 2em;
+  }
+  .competencesdocument {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+  }
+  .technologies {
+    width: 100%;
   }
 }
