@@ -57,6 +57,7 @@ footer {
   display: flex;
   justify-content: center;
   width: auto;
+  margin-right: 0.1em;
 }
 .siteLinks {
   display: flex;
@@ -64,7 +65,7 @@ footer {
   margin: 0;
 }
 .siteLink {
-  margin-right: 0.5em;
+  margin-right: 0.6em;
   height: 100%;
 }
 .navLink {
@@ -223,9 +224,6 @@ footer {
   width: 700px;
 }
 /******** La page Contact ************************ */
-.contactMargin {
-  margin-right: 1em;
-}
 .contactSection {
   display: flex;
   flex-direction: column;
