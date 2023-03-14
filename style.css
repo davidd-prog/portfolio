@@ -17,6 +17,10 @@ button {
   border-radius: 2em;
   cursor: pointer;
 }
+button:hover {
+  transition: filter 0.3s;
+  filter: invert(1);
+}
 .document {
   min-height: 85vh;
 }
@@ -60,7 +64,7 @@ footer {
   margin: 0;
 }
 .siteLink {
-  margin-right: 1.5em;
+  margin-right: 0.5em;
   height: 100%;
 }
 .navLink {
