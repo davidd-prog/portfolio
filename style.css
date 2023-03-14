@@ -10,7 +10,13 @@ a {
   text-decoration: none;
   color: black;
 }
-
+button {
+  padding: 0.3em;
+  background-color: beige;
+  width: 90px;
+  border-radius: 2em;
+  cursor: pointer;
+}
 .document {
   min-height: 85vh;
 }
