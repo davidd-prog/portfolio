@@ -29,6 +29,11 @@ footer {
   min-height: 15vh;
   background-color: rgba(222, 184, 135, 0.404);
 }
+.signature {
+  display: flex;
+  justify-content: center;
+  padding: 1.5em;
+}
 .marge {
   width: 90%;
   margin: auto;
@@ -140,12 +145,6 @@ footer {
 }
 .contact {
   margin-right: 2em;
-}
-.signature {
-  font-size: 1.5em;
-  display: flex;
-  justify-content: center;
-  padding: 1.5em;
 }
 /************************************************* */
 /******** La page Compétences ******************** */
