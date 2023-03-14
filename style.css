@@ -43,9 +43,6 @@ footer {
 /************************************************* */
 /******** Le Header ****************************** */
 
-.home {
-  text-decoration: underline;
-}
 .nameAndPhoto {
   display: flex;
   justify-content: space-between;
@@ -62,7 +59,7 @@ footer {
   display: flex;
   justify-content: center;
   width: auto;
-  margin-right: 0.1em;
+  margin-right: 0.6em;
 }
 .siteLinks {
   display: flex;
@@ -70,11 +67,27 @@ footer {
   margin: 0;
 }
 .siteLink {
-  margin-right: 0.6em;
+  margin-right: 0.5em;
   height: 100%;
 }
 .navLink {
-  text-decoration: underline;
+  padding: 0.5em 0.2em;
+  background-color: beige;
+  border-radius: 2.1em;
+  border: 1px solid lightgray;
+  /* text-decoration: underline; */
+}
+.homeLink {
+  padding: 0.5em 0.9em;
+}
+.contactNavLink {
+  padding: 0.5em 0.9em;
+}
+.githubNavLink {
+  padding: 0.5em 0.9em;
+}
+.cvNavLink {
+  padding: 0.5em 1.5em;
 }
 /************************************************* */
 /******** La page Home *************************** */
