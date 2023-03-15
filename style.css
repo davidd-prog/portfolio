@@ -75,7 +75,6 @@ footer {
   background-color: beige;
   border-radius: 2.1em;
   border: 1px solid lightgray;
-  /* text-decoration: underline; */
 }
 .homeLink {
   padding: 0.5em 0.9em;
@@ -236,6 +235,9 @@ footer {
   width: 700px;
 }
 /******** La page Contact ************************ */
+.contactMargin {
+  margin-right: 1em;
+}
 .contactSection {
   display: flex;
   flex-direction: column;
